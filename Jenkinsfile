@@ -35,6 +35,7 @@ pipeline {
             }
             steps {
                 dir('/workspace') {
+                    sh 'ls -l'
                     sh 'pyinstaller --onefile sources/add2vals.py'
                 }
             }
