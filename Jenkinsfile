@@ -34,7 +34,6 @@ pipeline {
             }
             steps {
                 sh 'pwd'
-                sh 'apk add py-pip'
                 sh 'pip install pyinstaller'
                 sh 'pyinstaller --onefile sources/add2vals.py' 
             }
