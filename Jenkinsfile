@@ -35,8 +35,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'echo $PATH'
-                sh 'pip install pyinstaller'
-                sh 'pyinstaller --onefile sources/add2vals.py' 
+                sh 'cdrx/pyinstaller-linux --onefile sources/add2vals.py' 
             }
             post {
                 success {
